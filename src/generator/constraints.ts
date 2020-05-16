@@ -1,4 +1,4 @@
-export const Projects = [
+export const ProjectConstraints = [
   {
     id: 1,
     name: 'IXE',

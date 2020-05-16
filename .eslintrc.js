@@ -6,10 +6,14 @@ module.exports = {
     'eslint:recommended',
     'plugin:@typescript-eslint/eslint-recommended',
     'plugin:@typescript-eslint/recommended',
+    'prettier/@typescript-eslint',
   ],
   env: {
     browser: true,
     amd: true,
     node: true,
   },
+  rules: {
+    // e.g. "@typescript-eslint/explicit-function-return-type": "off",
+  }
 };

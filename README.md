@@ -1,3 +1,3 @@
 # Mockserver
 
-Mockserver Boilerplate
+Mockserver Boilerplate with `json-server`, `faker` and `lowdb`.

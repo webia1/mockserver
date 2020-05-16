@@ -1,3 +1,4 @@
+import { ProjectType } from './generator/types';
 import { MockGenerator } from './generator/mock-generator.class';
 import { db } from './database/db';
 import * as jsonServer from 'json-server';

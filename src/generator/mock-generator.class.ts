@@ -1,17 +1,20 @@
-import { Projekt } from './types';
+import { Projects } from './constraints';
+import { ProjectType } from './types';
 import * as faker from 'faker/locale/de';
 import { times } from 'lodash';
 export class MockGenerator {
-  generateProjects(): any {
+  generateProjects(): Array<ProjectType> {
     const now = new Date();
-    const projects = times(3, (n: number) => {
+    const length = Projects.length;
+    const projects: Array<ProjectType> = times(length, (n: number) => {
       const past = faker.date.past();
       return {
-        id: n,
-        name: faker.lorem.word(),
+        id: Projects[n].id,
+        name: Projects[n].name,
         beschreibung: faker.lorem.words(3),
         createTime: past,
         changeTime: faker.date.between(past, now.toISOString()),
+        version: 2,
       };
     });
 

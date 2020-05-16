@@ -1,11 +1,11 @@
 export const db = {
-  posts: [
+  projekt: [
     // ...
   ],
-  comments: [
+  kategorie: [
     // ...
   ],
-  profile: {
+  kampagne: {
     // ...
   },
 };

@@ -1,5 +1,5 @@
 import { db } from './database/db';
-const jsonServer = require('json-server');
+import * as jsonServer from 'json-server';
 
 const server = jsonServer.create();
 const router = jsonServer.router(db);

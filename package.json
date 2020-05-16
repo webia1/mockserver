@@ -1,0 +1,32 @@
+{
+  "name": "mockserver-boilerplate",
+  "version": "0.0.1",
+  "description": "Mockserver Boilerplate",
+  "main": "src/index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/webia1/mockserver.git"
+  },
+  "keywords": [
+    "mockserver",
+    "boilerplate",
+    "json-server",
+    "faker",
+    "generate",
+    "mock-data"
+  ],
+  "author": "Erkan Buelbuel",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/webia1/mockserver/issues"
+  },
+  "homepage": "https://github.com/webia1/mockserver#readme",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^2.33.0",
+    "@typescript-eslint/parser": "^2.33.0",
+    "eslint": "^7.0.0"
+  }
+}

@@ -5,6 +5,7 @@ import * as jsonServer from 'json-server';
 
 const generator = new MockGenerator();
 db.projekt = generator.generateProjects();
+db.human = generator.generateHumans();
 
 const server = jsonServer.create();
 const router = jsonServer.router(db);

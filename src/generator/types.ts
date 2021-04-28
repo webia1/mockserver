@@ -50,3 +50,8 @@ export type CampaignType = {
   createTime: Date;
   version: number;
 };
+
+export type HumanType = {
+  name: string,
+  alter: number
+}

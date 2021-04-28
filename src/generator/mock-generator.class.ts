@@ -1,5 +1,5 @@
 import { ProjectConstraints } from './constraints';
-import { ProjectType } from './types';
+import { HumanType, ProjectType } from './types';
 import * as faker from 'faker/locale/de';
 import { times } from 'lodash';
 export class MockGenerator {
@@ -19,5 +19,17 @@ export class MockGenerator {
     });
 
     return projects;
+  }
+
+  generateHumans(): Array<HumanType> { 
+    const length = ProjectConstraints.length;
+    const humans: Array<HumanType> = times(length, (n: number) => {
+      return {
+        name: faker.name.firstName(),
+        alter: Math.floor(Math.random() * 100) + 1 
+      };
+    });
+
+    return humans;
   }
 }
